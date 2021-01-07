@@ -1,0 +1,19 @@
+{
+  "name": "hcde439-www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -dr _build"
+  },
+  "keywords": [],
+  "author": "Jordan Yoon-Buck",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.0",
+    "eleventy-plugin-sass": "^1.1.1"
+  }
+}

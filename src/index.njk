@@ -1,0 +1,31 @@
+---
+layout: global.njk
+title: HCDE 439
+---
+
+<header>
+  <div class="content-width">
+    <h1>HCDE 439 / physical computing</h1>
+    <p class="homepage-link">
+      <a href="https://yoonbuck.com/"><span>Jordan Yoon-Buck</span></a>
+    </p>
+  </div>
+</header>
+
+<div class="content-width">
+  <div class="contents">
+    <div class="contents-rule" role="presentation"></div>
+    <ul>
+      {%- for step in collections.process -%}
+        <li>
+          {%- if step.data.active -%} <a href="{{step.url}}"> {%- endif -%}
+            <article class="contents-item">
+              <i>{{ step.data.stepNo }}</i>
+              <h2>{{ step.data.title }}</h2>
+            </article>
+          {%- if step.data.active -%} </a> {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
