@@ -1,5 +1,7 @@
 const pluginSass = require("eleventy-plugin-sass");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const katex = require("katex");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -15,6 +17,16 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(inclusiveLangPlugin, {
     templateFormates: ["md", "njk", "html"],
+  });
+  eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addFilter("latex", (content) => {
+    return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
+      const cleanEquation = equation
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">");
+      return katex.renderToString(cleanEquation);
+    });
   });
 
   eleventyConfig.addFilter(

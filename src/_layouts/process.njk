@@ -9,7 +9,7 @@ tags: process
       <a href="/" class="contents-link">Back</a>
       <h1>{{ title }}</h1>
       <p class="process-meta">
-        {{ page.date | formatDate }} · {{ content | striptags | wordcount | mins }}
+        {{ page.date | formatDate }}
       </p>
       {%- if artifacts -%}
       <div class="process-artifacts">
@@ -27,7 +27,7 @@ tags: process
   <div class="content-width">
 
     <div class="page-content">
-      {{ content | safe }}
+      {{ content | latex | safe }}
     </div>
 
     <hr class="page-content--after">
