@@ -389,6 +389,7 @@ Under normal lighting conditions, it would be a bit slower.
     <source src="https://cdn.yoonbuck.com/hcde439-www/3-io/io.webm" type="video/webm">
     <source src="https://cdn.yoonbuck.com/hcde439-www/3-io/io.mp4" type="video/mp4">
 </video>
+
 ## Example serial port output
 
 ```
