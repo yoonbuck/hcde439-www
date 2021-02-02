@@ -432,47 +432,40 @@ header {
       margin-bottom: 0;
     }
   }
-}
 
-.page--bq-dialogs blockquote {
-  border-left-color: transparent;
-  padding: 1.5rem 2rem;
-  margin: 0 0 2rem 0;
-  background-color: getvar(background-offset);
-  strong,
-  em {
-    display: block;
-    margin: 0.5rem 0 0.5rem 2.5rem;
-    position: relative;
-    &:first-child {
-      margin-top: 0;
+  table {
+    // padding: 0.25rem 0.75rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 4px;
+    overflow: auto;
+    background: getvar(background-offset);
+    padding: 0.25rem 0.75rem;
+
+    td,
+    th {
+      border-bottom: 2px solid getvar(text-ghost);
+      text-align: left;
+      padding: 0.5rem 0.75rem;
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &::before {
-      user-select: text;
-      position: absolute;
-      left: 0;
-      transform: translate(calc(-100% - 0.75rem), 0.125rem);
-      font-size: 0.75rem;
-      text-transform: uppercase;
+    th {
+      background: getvar(background-offset);
       font-weight: 600;
-      line-height: 1.5rem;
-      color: getvar(text-secondary);
     }
-  }
-  em {
-    font-style: normal;
-    background-color: inherit;
-    &::before {
-      content: "Dizzy";
+    tr:last-of-type td {
+      border: 0;
     }
-  }
-  strong::before {
-    content: "User";
-  }
-  & + h2 {
-    margin-top: 4rem;
+
+    // th,
+    // td {
+    //   text-align: left;
+    //   padding: 0.25rem;
+    // }
+    // tr:not(:last-of-type) td,
+    // thead td {
+    //   margin: 0;
+    //   border-bottom: 2px solid getvar(text-ghost);
+    // }
   }
 }

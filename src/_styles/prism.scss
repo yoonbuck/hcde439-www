@@ -1,7 +1,8 @@
 // BASED ON: https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-light.css
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"],
+.page-content > pre {
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -45,7 +46,8 @@ pre[class*="language-"] ::selection {
   padding: 0.1em;
 }
 
-pre[class*="language-"] {
+pre[class*="language-"],
+.page-content > pre {
   overflow: auto;
   position: relative;
   margin: 0.5em 0;
@@ -212,7 +214,8 @@ pre[class*="language-"] {
 
 @media (prefers-color-scheme: dark) {
   code[class*="language-"],
-  pre[class*="language-"] {
+  pre[class*="language-"],
+  .page-content > pre {
     color: #eee;
     background: #2f2f2f;
   }
