@@ -41,8 +41,8 @@ on the remote to play a little diddy—with no speaker in sight!
 // maximum number of notes per song
 #define MAX_SONG_NOTES 50
 
-// note duration values (out of 1028)
-const long WHOLE = 1028;
+// note duration values (out of 1024)
+const long WHOLE = 1024;
 const long HALF = 512;
 const long QUARTER = 256;
 const long EIGHTH = 128;
