@@ -31,7 +31,7 @@ on the remote to play a little diddy—with no speaker in sight!
 
 ![](https://cdn.yoonbuck.com/hcde439-www/4-libraries/image.jpg)
 
-## code
+# code
 
 ```cpp
 #include <Arduino.h>
