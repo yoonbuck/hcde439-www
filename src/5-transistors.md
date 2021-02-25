@@ -14,7 +14,7 @@ LCD display could make for an interesting project. The circuit I created
 switches a fan on or off based on the current temperature and a threshold
 controlled by the user with a potentiometer.
 
-This is quite practical application of a fan and temperature sensor, and similar
+This is a quite practical application of a fan and temperature sensor, and similar
 systems can be found in a number of household devices. For example, many computers
 contain fans designed to turn on or vary their speed based on temperature in order
 to cool the CPU or GPU. Thermostats use temperature sensors to switch heating,
